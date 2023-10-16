@@ -1,0 +1,150 @@
+.home{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.home h1{
+  font-size: 50px;
+  font-weight: 700;
+  color: rgb(26, 26, 26);
+  margin-bottom: 30px;
+}
+
+.container{
+  position: relative;
+  /* background: transparent; */
+  background: rgb(26, 26, 26);
+  padding: 20px;
+  border-radius: 30px;
+  justify-content: center;
+  /* align-items: center ; */
+  width: 50%;
+  height: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  .example{
+    flex-wrap: wrap;
+  }
+  .container{
+    width: 100%;
+  }
+}
+
+.add-work{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 250px;
+  height: 40px; */
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.add-work input{
+  height: 50px;
+  width: 300px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  font-size: 18px;
+}
+
+.add-work button{
+  border-radius: 50px;
+  width: 60px;
+  height: 40px;
+  background: #01aeff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.example{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.buttons{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons .btn{
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.example-container {
+    width: 400px;
+    max-width: 100%;
+    margin: 0 25px 25px 0;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .example-container h2{
+    color: #fff;
+    text-align: center;
+  }
+  
+  .example-list {
+    border: solid 1px #ccc;
+    min-height: 60px;
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+    display: block;
+  }
+  
+  .example-box {
+    padding: 20px 10px;
+    border-bottom: solid 1px #ccc;
+    color: rgba(0, 0, 0, 0.87);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    cursor: move;
+    background: white;
+    font-size: 14px;
+  }
+  
+  .cdk-drag-preview {
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+                0 8px 10px 1px rgba(0, 0, 0, 0.14),
+                0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  }
+  
+  .cdk-drag-placeholder {
+    opacity: 0;
+  }
+  
+  .cdk-drag-animating {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+  }
+  
+  .example-box:last-child {
+    border: none;
+  }
+  
+  .example-list.cdk-drop-list-dragging .example-box:not(.cdk-drag-placeholder) {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+  }
+  
